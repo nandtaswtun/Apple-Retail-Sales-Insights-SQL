@@ -1,3 +1,19 @@
+
+```mermaid
+erDiagram
+    STORES ||--o{ SALES : "process"
+    PRODUCTS ||--o{ SALES : "sold in"
+    CATEGORY ||--o{ PRODUCTS : "contains"
+    SALES ||--o{ WARRANTY : "has"
+
+    STORES {
+        int Store_ID
+        string Store_Name
+        string Country
+    }
+    %% ... rest of the code provided earlier ...
+```
+
 # 📝 Project Overview
 This repository contains a specialized SQL toolkit designed to analyze the full lifecycle of Apple products, from launch-day impact to long-term warranty support.
 
